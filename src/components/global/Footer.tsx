@@ -1,4 +1,4 @@
-import Logo from "@/assets/logo.svg";
+import Logo from "@/assets/logo.png";
 import { type AppProps } from "@/types";
 import {
   IconBrandGithub,
@@ -17,7 +17,14 @@ function Socials() {
     <div className="flex w-full flex-col items-center justify-between gap-6 lg:flex-row">
       <div>
         <Link href="/">
-          <Image width={125} src={Logo as StaticImageData} alt="Logo" />
+          <Image 
+            src={Logo as StaticImageData} 
+            alt="Logo" 
+            width={120} 
+            height={35}
+            className="h-8 w-auto md:h-10"
+            style={{ objectFit: 'contain' }}
+          />
         </Link>
       </div>
       <div className="flex items-center justify-between gap-4">
@@ -63,7 +70,7 @@ function Links() {
   return (
     <div className="flex w-full flex-col items-center justify-between gap-6 lg:flex-row">
       <div className="px-4 text-center text-xs lg:px-0">
-        Copyright ©2022 The Modern Foundry Inc. All Rights Reserved.
+        Copyright © 2025 The National Fix All rights reserved - Created by <a href="https://kmgtechnologies.com/" className="underline">KMG</a> 
       </div>
       <div className="flex-between flex flex-col items-center justify-center gap-3 md:flex-row md:gap-6">
         <StyledLink href="#">Terms</StyledLink>

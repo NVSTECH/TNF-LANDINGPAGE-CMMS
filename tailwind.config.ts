@@ -22,6 +22,10 @@ export default {
           light: "#ffe16a",
           dark: "#b78103 ",
         },
+        red: {
+          dark: "#cd1f1e",
+          light: "#ffd0cf",  
+        },
       },
       fontFamily: {
         body: ["var(--font-body)", "system-ui"],

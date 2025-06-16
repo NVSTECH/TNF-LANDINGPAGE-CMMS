@@ -1,7 +1,7 @@
-import AppContentPrivate from "@/assets/app-content-private.jpg";
-import AppContentPublic from "@/assets/app-content-public.jpg";
-import ReceivePayment from "@/assets/app-payment-receive.jpg";
-import RequestPayment from "@/assets/app-payment-request.jpg";
+import TNF6 from "@/assets/TNF6.png";
+import TNF5 from "@/assets/TNF5.png";
+import TNF7 from "@/assets/TNF7.png";
+import TNF8 from "@/assets/TNF8.png";
 import MobileWireFrame from "@/assets/mobile-wireframe-thin.png";
 import Image, { type StaticImageData } from "next/image";
 import React from "react";
@@ -69,19 +69,19 @@ export default function Payment() {
         <SectionTitle
           title="Pay anyone instantly using the Bitcoin Lightning Network"
           description="Send and receive payments anywhere across borders with no added fees."
-          gradient="bg-gradient-to-r from-yellow-light to-yellow-dark"
+          gradient="bg-gradient-to-r from-blue-light to-blue-dark"
         />
         <Container>
           <div className="flex flex-col items-center justify-center gap-4 lg:flex-row">
             <Card
               description="Exchange value with other users, and receive direct contributions for your content."
-              starterImage={AppContentPrivate}
-              endImage={AppContentPublic}
+              starterImage={TNF6}
+              endImage={TNF5}
             />
             <Card
               description="Exchange value with other users, and receive direct contributions for your content."
-              starterImage={ReceivePayment}
-              endImage={RequestPayment}
+              starterImage={TNF7}
+              endImage={TNF8}
             />
           </div>
         </Container>

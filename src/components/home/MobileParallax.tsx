@@ -1,5 +1,5 @@
-import HeroWireFrameInitialImage from "@/assets/hero-wireframe-initial-image.jpg";
-import HeroWireFrameSecondImage from "@/assets/hero-wireframe-second-image.jpg";
+import TNF2 from "@/assets/TNF2.png";
+import TNF1 from "@/assets/tnf1.png";
 import MobileWireFrame from "@/assets/mobile-wireframe-thin.png";
 import { poppinsBold } from "@/fonts";
 import { cn } from "@/lib/utils";
@@ -47,7 +47,7 @@ function BackgroundText() {
             poppinsBold.className
           )}
         >
-          Zion
+          TNF
         </h2>
       </div>
     </div>
@@ -69,13 +69,13 @@ function MobileView() {
         />
         <div className="absolute bottom-[35px] left-[36px] right-[36px] top-[35px] -z-[1] overflow-hidden">
           <Image
-            src={HeroWireFrameInitialImage}
+            src={TNF2}
             ref={ref as React.RefObject<HTMLImageElement>}
             alt="App image 1"
             className="absolute -z-10 h-full w-full transform overflow-hidden rounded-[40px] object-cover"
           />
           <Image
-            src={HeroWireFrameSecondImage}
+            src={TNF1}
             alt="App image 2"
             className="absolute -z-20 h-full w-full overflow-hidden rounded-[40px] object-cover"
           />

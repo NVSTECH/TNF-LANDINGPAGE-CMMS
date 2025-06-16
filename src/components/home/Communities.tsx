@@ -1,12 +1,13 @@
 import UserAvatar1 from "@/assets/user-1-avatar.png";
-import User1 from "@/assets/user-1.jpg";
+import TNF3 from "@/assets/TNF3.png";
 import UserAvatar2 from "@/assets/user-2-avatar.png";
-import User2 from "@/assets/user-2.jpg";
-import User3 from "@/assets/user-3.jpg";
+import TNF10 from "@/assets/la2.png";
+import Starbucks from "@/assets/starbucks.png";
+import User3 from "@/assets/la3.png";
 import UserAvatar4 from "@/assets/user-4-avatar.png";
-import User4 from "@/assets/user-4.jpg";
+import User4 from "@/assets/la4.png";
 import UserAvatar5 from "@/assets/user-5-avatar.png";
-import User5 from "@/assets/user-5.jpg";
+import User5 from "@/assets/la1.png";
 import { poppinsBold } from "@/fonts";
 import { cn } from "@/lib/utils";
 import Image, { type StaticImageData } from "next/image";
@@ -22,12 +23,12 @@ type UserData = {
 };
 
 const usersData: UserData[] = [
-  { name: "@MileyTabita", background: User1 },
-  { name: "Mark Moss", background: User2, avatar: UserAvatar1 },
-  { name: "Tony Robbins", background: User3, avatar: UserAvatar2 },
-  { name: "Bitcoin Magazine", background: User4, avatar: UserAvatar4 },
-  { name: "Aubrey Marcus", background: User5, avatar: UserAvatar5 },
-  { name: "Tony Robbins", background: User3, avatar: UserAvatar2 },
+  { name: "", background: TNF3 },
+  { name: "Intuitive CRM", background: TNF10 },
+  { name: "Live Tracking", background: User3 },
+  { name: "Invoice Handling", background: User4 },
+  { name: "Analytics dashbord", background: User5 },
+  { name: "Live Tracking", background: User3 },
 ];
 
 function reverseArray<IData>(array: IData[]): IData[] {
@@ -43,24 +44,28 @@ function UserCard(props: { user: UserData }) {
   return (
     <div
       className={cn(
-        "flex h-[250px] w-[250px] flex-col items-center rounded-[31px] p-10",
+        "flex h-[250px] w-[250px] flex-col items-center rounded-[31px] p-10 relative overflow-hidden",
         "sm:h-[350px] sm:w-[350px]",
         "lg:h-[400px] lg:w-[500px]",
         user.avatar ? "justify-center" : "justify-end"
       )}
-      style={{
-        background: `linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),url(${user.background.src}),linear-gradient(138deg,rgba(116,202,255,.8),#f46692 58%,#ffe16a)`,
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-      }}
     >
+      <div className="absolute inset-0">
+        <Image
+          src={user.background}
+          alt={user.name}
+          fill
+          className="object-cover"
+          sizes="(max-width: 768px) 250px, (max-width: 1024px) 350px, 500px"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-black/20" />
+      </div>
       {user.avatar ? (
-        <div className="flex flex-col place-items-center">
+        <div className="flex flex-col place-items-center relative z-10">
           <Image src={user.avatar} alt={user.name} width={120} />
           <h2
             className={cn(
-              "text-center text-xl text-white",
+              "text-center text-xl bg-gradient-to-b from-blue-light to-blue-dark bg-clip-text text-transparent",
               poppinsBold.className
             )}
           >
@@ -70,7 +75,7 @@ function UserCard(props: { user: UserData }) {
       ) : (
         <h2
           className={cn(
-            "text-center text-xl text-white",
+            "text-center text-xl bg-gradient-to-b from-blue-light to-blue-dark bg-clip-text text-transparent relative z-10",
             poppinsBold.className
           )}
         >

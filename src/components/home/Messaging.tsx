@@ -1,7 +1,7 @@
 import Avatar1 from "@/assets/message-user-1.jpg";
 import Avatar2 from "@/assets/message-user-2.jpg";
 import Avatar3 from "@/assets/message-user-3.jpg";
-import MessagingImage from "@/assets/messaging-profile.jpg";
+import TNF9 from "@/assets/TNF9.png";
 import MobileWireFrame from "@/assets/mobile-wireframe-thick.png";
 import { poppinsBold } from "@/fonts";
 import { cn } from "@/lib/utils";
@@ -50,7 +50,7 @@ function LeftCard() {
           />
           <div className="absolute bottom-[2.3%] left-[4.9%] right-[4.9%] top-[2.3%] -z-[1] overflow-hidden ">
             <Image
-              src={MessagingImage}
+              src={TNF9}
               alt="Starter image"
               className="h-full w-full object-cover"
             />
@@ -85,7 +85,7 @@ const messages: Message[] = [
   },
   {
     name: "Emilie J",
-    text: "Let’s throw a huge release party! Are you guys available this Saturday? 🤗",
+    text: "Let's throw a huge release party! Are you guys available this Saturday? 🤗",
     avatar: Avatar1,
   },
 ];

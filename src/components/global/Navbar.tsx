@@ -1,4 +1,4 @@
-import Logo from "@/assets/logo.svg";
+import Logo from "@/assets/logo.png";
 import { Container } from "@/components/layout/Container";
 import { cn } from "@/lib/utils";
 import { type AppProps } from "@/types";
@@ -37,19 +37,26 @@ export default function Navbar() {
   return (
     <nav
       ref={navRef}
-      className="sticky left-0 top-0 z-10 flex h-20 place-items-center border border-b-gray-light bg-white/80 px-10 py-6 filter backdrop-blur-sm"
+      className="sticky left-0 top-0 z-10 flex h-16 place-items-center border border-b-gray-light bg-white/80 px-4 py-2 filter backdrop-blur-sm md:h-20 md:px-10 md:py-6"
     >
       <Container>
         <div className="flex items-center justify-between">
-          <div>
-            <Link href="/">
-              <Image src={Logo as StaticImageData} alt="Logo" />
+          <div className="flex items-center">
+            <Link href="/" className="flex items-center">
+              <Image 
+                src={Logo as StaticImageData} 
+                alt="Logo" 
+                width={120} 
+                height={35}
+                className="h-8 w-auto md:h-10"
+                style={{ objectFit: 'contain' }}
+              />
             </Link>
           </div>
           <ul
             ref={listNavRef}
             className={cn(
-              "fixed left-0 top-20 z-10 h-auto w-full -translate-y-[120%] bg-white p-4 shadow-sm duration-200",
+              "fixed left-0 top-16 z-10 h-auto w-full -translate-y-[120%] bg-white p-4 shadow-sm duration-200 md:top-20",
               "lg:relative lg:left-0 lg:top-0 lg:flex lg:w-auto lg:translate-y-0 lg:items-center lg:justify-between lg:gap-8 lg:bg-transparent lg:shadow-none"
             )}
           >

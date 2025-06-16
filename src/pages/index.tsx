@@ -14,8 +14,8 @@ const Home: NextPage = () => {
   return (
     <React.Fragment>
       <Head>
-        <title>ZION - Get Paid For Your Content</title>
-        <meta name="description" content="ZION - Get Paid For Your Content" />
+        <title>The National Fix</title>
+        <meta name="description" content="The National Fix" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="X-UA-Compatible" content="IE=7" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />

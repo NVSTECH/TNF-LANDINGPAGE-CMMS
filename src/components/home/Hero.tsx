@@ -1,6 +1,6 @@
 import Vector1 from "@/assets/bg-vector-1.svg";
 import Vector2 from "@/assets/bg-vector-2.svg";
-import QRCode from "@/assets/qr-code.jpg";
+import QRCode from "@/assets/QR.png";
 import { Container } from "@/components/layout/Container";
 import { poppinsBold } from "@/fonts";
 import { cn } from "@/lib/utils";
@@ -82,7 +82,7 @@ function QRCodeCard() {
       <p className="text-center text-sm">
         Download
         <br />
-        Zion app
+        TNF app
       </p>
       <Image width={70} src={QRCode} alt="QR Code" />
     </div>
@@ -102,10 +102,10 @@ export default function Hero() {
               "lg:max-w-[700px]"
             )}
           >
-            <HeadingNode>GET PAID</HeadingNode>
-            <HeadingNode>FOR YOUR</HeadingNode>
+            <HeadingNode>THE ULTIMATE</HeadingNode>
+            <HeadingNode>MAINTENANCE</HeadingNode>
             <div className="flex w-full items-center justify-start gap-4">
-              <HeadingNode className="lg:w-auto">CONTENT</HeadingNode>
+              <HeadingNode className="lg:w-auto">APPLICATION</HeadingNode>
               <QRCodeCard />
             </div>
           </div>
