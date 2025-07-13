@@ -1,7 +1,7 @@
-import TNF6 from "@/assets/TNF6.png";
-import TNF5 from "@/assets/TNF5.png";
-import TNF7 from "@/assets/TNF7.png";
-import TNF8 from "@/assets/TNF8.png";
+import TNF6 from "@/assets/newUi/3.jpg";
+import TNF5 from "@/assets/newUi/4.jpg";
+import TNF7 from "@/assets/newUi/1.jpg";
+import TNF8 from "@/assets/newUi/2.jpg";
 import MobileWireFrame from "@/assets/mobile-wireframe-thin.png";
 import Image, { type StaticImageData } from "next/image";
 import React from "react";
@@ -64,22 +64,22 @@ function Card(props: CardProps) {
 
 export default function Payment() {
   return (
-    <SectionWrapper>
-      <div className="flex flex-col gap-14">
+    <SectionWrapper className="bg-white" noContainer>
+      <div className="flex flex-col">
         <SectionTitle
-          title="Pay anyone instantly using the Bitcoin Lightning Network"
-          description="Send and receive payments anywhere across borders with no added fees."
+          title="Your Facility Command Center"
+          description="Seamlessly upload your work orders and let our system handle the rest."
           gradient="bg-gradient-to-r from-blue-light to-blue-dark"
         />
         <Container>
           <div className="flex flex-col items-center justify-center gap-4 lg:flex-row">
             <Card
-              description="Exchange value with other users, and receive direct contributions for your content."
+              description="For urgent needs, let our system instantly assign the best-vetted technician for the job, ensuring the fastest possible response and resolution."
               starterImage={TNF6}
               endImage={TNF5}
             />
             <Card
-              description="Exchange value with other users, and receive direct contributions for your content."
+              description="For more control, open your job to our marketplace. Compare competitive bids and profiles to select the perfect expert for your needs and budget."
               starterImage={TNF7}
               endImage={TNF8}
             />

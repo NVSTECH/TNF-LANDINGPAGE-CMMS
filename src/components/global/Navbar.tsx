@@ -60,13 +60,11 @@ export default function Navbar() {
               "lg:relative lg:left-0 lg:top-0 lg:flex lg:w-auto lg:translate-y-0 lg:items-center lg:justify-between lg:gap-8 lg:bg-transparent lg:shadow-none"
             )}
           >
-            <NavLink href="#">Members</NavLink>
-            <NavLink href="#">Creators</NavLink>
-            <NavLink href="#">Communities</NavLink>
-            <NavLink href="#">Messaging</NavLink>
-            <NavLink href="#">Payments</NavLink>
+            <NavLink href="#">Technicians</NavLink>
+            <NavLink href="#">Facility Managers</NavLink>
             <NavLink href="#">Guide</NavLink>
             <NavLink href="#">Docs</NavLink>
+            <NavLink href="#">Contact Us</NavLink>
           </ul>
           <div className="z-10 lg:hidden">
             <button aria-label="Toggle navbar button" onClick={toggleNavBar}>

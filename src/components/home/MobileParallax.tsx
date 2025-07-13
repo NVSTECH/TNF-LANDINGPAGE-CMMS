@@ -1,12 +1,14 @@
 import TNF2 from "@/assets/TNF2.png";
 import TNF1 from "@/assets/tnf1.png";
 import MobileWireFrame from "@/assets/mobile-wireframe-thin.png";
+import TNF3 from "@/assets/newUi/3.jpg";
 import { poppinsBold } from "@/fonts";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import React from "react";
+import React from "react"; 
 import { Fade } from "react-reveal";
 import { useParallax } from "react-scroll-parallax";
+import { MouseParallax, ScrollParallax } from "react-just-parallax";
 
 function BackgroundText() {
   const [gap, setGap] = React.useState(100);
@@ -34,7 +36,7 @@ function BackgroundText() {
         <h2
           className={cn(
             "w-[50vw] text-right text-[210px]",
-            "bg-gradient-to-t from-blue-dark to-blue-light bg-clip-text text-transparent",
+            "bg-gradient-to-t from-black-dark to-black-light bg-clip-text text-transparent",
             poppinsBold.className
           )}
         >
@@ -43,7 +45,7 @@ function BackgroundText() {
         <h2
           className={cn(
             "w-[50vw] text-left text-[210px]",
-            "bg-gradient-to-t from-blue-dark to-blue-light bg-clip-text text-transparent",
+            "bg-gradient-to-t from-black-dark to-black-light bg-clip-text text-transparent",
             poppinsBold.className
           )}
         >
@@ -75,7 +77,7 @@ function MobileView() {
             className="absolute -z-10 h-full w-full transform overflow-hidden rounded-[40px] object-cover"
           />
           <Image
-            src={TNF1}
+            src={TNF3}
             alt="App image 2"
             className="absolute -z-20 h-full w-full overflow-hidden rounded-[40px] object-cover"
           />
@@ -87,7 +89,7 @@ function MobileView() {
 
 export default function MobileParallax() {
   return (
-    <div className="relative h-[200vh]">
+    <div className="relative h-[250vh]">
       <BackgroundText />
       <MobileView />
     </div>

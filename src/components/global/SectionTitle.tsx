@@ -11,16 +11,17 @@ type SectionTitleProps = {
 
 export default function SectionTitle(props: SectionTitleProps) {
   const { title, description, gradient } = props;
+
   return (
     <Container>
       <Fade>
-        <div className="flex flex-col place-items-center gap-4 text-center">
+        <div className="flex flex-col place-items-center gap-4 text-center py-8">
           <h2
             className={cn(
-              "w-full max-w-6xl text-3xl sm:text-4xl md:text-5xl lg:text-7xl",
+              "w-full max-w-6xl text-3xl sm:text-4xl md:text-5xl lg:text-7xl leading-tight",
               poppinsBold.className,
               gradient,
-              "bg-clip-text text-transparent"
+              "bg-clip-text"
             )}
           >
             {title}

@@ -94,7 +94,7 @@ export default function Hero() {
     <header className="relative">
       <BackgroundObjects />
       <Container>
-        <div className="grid min-h-[70vh] place-items-center">
+        <div className="grid min-h-[100vh] place-items-center">
           <div
             className={cn(
               "flex w-full max-w-[300px] flex-col place-items-center gap-2",
@@ -102,10 +102,10 @@ export default function Hero() {
               "lg:max-w-[700px]"
             )}
           >
-            <HeadingNode>THE ULTIMATE</HeadingNode>
-            <HeadingNode>MAINTENANCE</HeadingNode>
+            <HeadingNode>END-TO-END</HeadingNode>
+              <HeadingNode>AI POWERED</HeadingNode>
             <div className="flex w-full items-center justify-start gap-4">
-              <HeadingNode className="lg:w-auto">APPLICATION</HeadingNode>
+              <HeadingNode className="lg:w-auto">CMMS</HeadingNode>
               <QRCodeCard />
             </div>
           </div>
