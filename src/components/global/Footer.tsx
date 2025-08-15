@@ -70,7 +70,7 @@ function Links() {
   return (
     <div className="flex w-full flex-col items-center justify-between gap-6 lg:flex-row">
       <div className="px-4 text-center text-xs lg:px-0">
-        Copyright © 2025 The National Fix All rights reserved - Created by <a href="https://kmgtechnologies.com/" className="underline">KMG</a> 
+        Copyright © 2025 The National Fix All rights reserved  
       </div>
       <div className="flex-between flex flex-col items-center justify-center gap-3 md:flex-row md:gap-6">
         <StyledLink href="#">Terms</StyledLink>
