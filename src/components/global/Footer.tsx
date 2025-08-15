@@ -18,7 +18,7 @@ function Socials() {
       <div>
         <Link href="/">
           <Image 
-            src={Logo as StaticImageData} 
+            src={Logo} 
             alt="Logo" 
             width={120} 
             height={35}

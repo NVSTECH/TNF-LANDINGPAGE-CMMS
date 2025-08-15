@@ -44,7 +44,7 @@ export default function Navbar() {
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
               <Image 
-                src={Logo as StaticImageData} 
+                src={Logo}
                 alt="Logo" 
                 width={120} 
                 height={35}
